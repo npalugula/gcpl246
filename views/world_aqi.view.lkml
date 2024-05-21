@@ -62,7 +62,16 @@ view: world_aqi {
     type: number
     sql: ${TABLE}.lng ;;
   }
-
+  dimension: location_1 {
+    type: location
+    sql_latitude:${TABLE}.lat ;;
+    sql_longitude:${TABLE}.lng ;;
+  }
+  dimension: location_2 {
+    type: location
+    sql_latitude:${TABLE}.lat-4.5 ;;
+    sql_longitude:${TABLE}.lng+1.5 ;;
+  }
   dimension: no2_aqi_category {
     type: string
     sql: ${TABLE}.NO2_AQI_Category ;;
