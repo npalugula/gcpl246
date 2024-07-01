@@ -16,6 +16,11 @@ view: electronics_sales {
     sql: ${TABLE}.brand ;;
   }
 
+  filter: category_filter {
+    type: string
+    suggest_dimension:  category
+    sql: select distinct ${TABLE}.category  from ${TABLE} where ${TABLE}.category like 'C%' ;;
+  }
   dimension: category {
     type: string
     sql: ${TABLE}.category ;;
