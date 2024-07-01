@@ -27,6 +27,9 @@ explore: electronics_sales {
     sql_on: ${electronics_sales.user_id} = ${users.id} ;;
     relationship: many_to_one
   }
+  always_filter:  {
+    filters: [brand: "Apple"]
+    }
 }
 
 # To create more sophisticated Explores that involve multiple views, you can use the join parameter.
