@@ -27,8 +27,12 @@ explore: electronics_sales {
     sql_on: ${electronics_sales.user_id} = ${users.id} ;;
     relationship: many_to_one
   }
-  always_filter:  {
-    filters: [brand: "Apple"]
+ # always_filter:  {
+  #  filters: [brand: "Apple"]
+   #}
+
+    always_filter: {
+      filters: [electronics_sales.filter_test: "2024-07-01"]
     }
 }
 
