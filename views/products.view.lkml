@@ -76,13 +76,24 @@ view: products {
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
-	id,
-	name,
-	distribution_centers.name,
-	distribution_centers.id,
-	inventory_items.count,
-	order_items.count
-	]
+  id,
+  name,
+  distribution_centers.name,
+  distribution_centers.id,
+  inventory_items.count,
+  order_items.count
+  ]
   }
 
+}
+
+view: product_ext {
+  extends: [products]
+
+  dimension: product_ext_1 {
+    view_label: "product_ext_1"
+    group_label: ""
+    label: "product_ext_1"
+    group_item_label: "product_ext"
+  }
 }
