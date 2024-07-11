@@ -83,7 +83,8 @@ view: products {
   inventory_items.count,
   order_items.count,
   cost,
-  department
+  department,
+  retail_price
   ]
   }
   set: ext {fields:[brand]}
