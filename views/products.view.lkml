@@ -81,10 +81,7 @@ view: products {
   distribution_centers.name,
   distribution_centers.id,
   inventory_items.count,
-  order_items.count,
-  cost,
-  department,
-  retail_price
+  order_items.count
   ]
   }
   set: ext {fields:[brand]}
