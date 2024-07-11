@@ -154,6 +154,11 @@ explore: products {
     sql_on: ${products.distribution_center_id} = ${distribution_centers.id} ;;
     relationship: many_to_one
   }
+  hidden:  yes
+  group_label: "Master Data"
+  label: "Time Periods"
+  description: "This explore contains the heirarchy information starting from the day"
+  fields: [products.all*,products.count]
 }
 
 explore: tab {

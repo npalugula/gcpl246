@@ -85,6 +85,8 @@ view: products {
   ]
   }
 
+  set: all {fields:[detail*,sku,brand]}
+
 }
 
 view: product_ext {
