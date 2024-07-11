@@ -101,4 +101,16 @@ view: product_ext {
     label: "product_ext_1"
     group_item_label: "product_ext"
   }
+  dimension: brand1 {
+    view_label: "product_ext_1"
+    group_label: ""
+    label: "product_ext_1"
+    group_item_label: "product_ext"
+  }
+  dimension: brand2 {
+    view_label: "product_ext_1"
+    group_label: ""
+    label: "product_ext_1"
+    group_item_label: "product_ext"
+  }
 }
