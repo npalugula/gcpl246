@@ -84,15 +84,15 @@ view: products {
   order_items.count
   ]
   }
-
-  set: all {fields:[detail*,sku,brand]}
+  set: ext {fields:[brand]}
+  set: all {fields:[detail*,sku,brand,ext*]}
 
 }
 
 view: product_ext {
   extends: [products]
 
-  dimension: product_ext_1 {
+  dimension: brand {
     view_label: "product_ext_1"
     group_label: ""
     label: "product_ext_1"
