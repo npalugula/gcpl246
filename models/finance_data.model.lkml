@@ -46,6 +46,8 @@ explore: bqml_model_info {}
 
 explore: sp_stocks {}
 
+explore: imdb_data {}
+
 explore: inventory_items {
   join: products {
     type: left_outer
