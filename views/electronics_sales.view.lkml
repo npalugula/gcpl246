@@ -8,7 +8,7 @@ view: electronics_sales {
   # define primary_key: yes on a dimension that has no repeated values.
 
     # Here's what a typical dimension looks like in LookML.
-    # A dimension is a groupable field that can be used to filter query results.
+    # A dimexdfdgdnsion is a groupable field that can be used to filter query results.
     # This dimension will be called "Brand" in Explore.
 
   dimension: brand {
