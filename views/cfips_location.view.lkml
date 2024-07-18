@@ -8,7 +8,7 @@ view: cfips_location {
   # define primary_key: yes on a dimension that has no repeated values.
 
     # Here's what a typical dimension looks like in LookML.
-    # A dimension is a groupable field that can be used to filter query results.
+    # A dimen. sion is a groupable field that can be used to filter query results.
     # This dimension will be called "Cfips" in Explore.
 
   dimension: cfips {
