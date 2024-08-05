@@ -1,5 +1,5 @@
 - dashboard: pdf_download
-  title: PDF_Download
+  title: PDF_Download_1
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
