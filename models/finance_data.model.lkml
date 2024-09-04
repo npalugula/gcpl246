@@ -31,9 +31,7 @@ explore: electronics_sales {
   #  filters: [brand: "Apple"]
    #}
 
-    always_filter: {
-      filters: [electronics_sales.filter_test: "2024-07-01"]
-    }
+
 }
 
 # To create more sophisticated Explores that involve multiple views, you can use the join parameter.
