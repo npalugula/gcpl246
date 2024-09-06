@@ -90,6 +90,15 @@ view: products {
   set: ext {fields:[brand]}
   set: all {fields:[detail*,sku,brand,ext*]}
 
+  dimension: test_html_products {
+    type: string
+    sql: ${sku} ;;
+    html:
+    <div> {% if id._value == 14235 %} <br> <span style="color: red"> Data is Delayed </span> {% endif %}
+    <br>{{rendered_value}}</div>
+    ;;
+  }
+
 }
 
 view: product_ext {

@@ -31,9 +31,7 @@ explore: electronics_sales {
   #  filters: [brand: "Apple"]
    #}
 
-    always_filter: {
-      filters: [electronics_sales.filter_test: "2024-07-01"]
-    }
+
 }
 
 # To create more sophisticated Explores that involve multiple views, you can use the join parameter.
@@ -51,6 +49,7 @@ explore: imdb_data {}
 explore: inventory_items {
   join: products {
     type: left_outer
+    fields: [products.test_html_products]
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
     relationship: many_to_one
   }

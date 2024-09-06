@@ -91,4 +91,12 @@ view: inventory_items {
     type: count
     drill_fields: [id, product_name, products.name, products.id, order_items.count]
   }
+
+  dimension: test_html {
+    type: string
+    sql: ${product_sku} ;;
+    html:
+    <div size="500px"><br>{{rendered_value}}</div>
+    ;;
+  }
 }
