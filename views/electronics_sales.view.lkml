@@ -15,9 +15,7 @@ view: electronics_sales {
     type: string
     sql: ${TABLE}.brand ;;
   }
-  parameter: filter_test {
-    type: date
-  }
+
   dimension: date_1 {
     type: date
     sql: {% parameter filter_test %} ;;
